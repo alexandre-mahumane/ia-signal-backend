@@ -1,6 +1,5 @@
 import type { Request, Response } from 'express'
 import { userService } from './user.service.ts'
-//hello
 async function create(req: Request, res: Response) {
   const created = await userService.create(req.body)
   res.status(201).json(created)
